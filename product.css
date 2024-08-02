@@ -1,0 +1,127 @@
+
+:root{
+    --cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(228, 12%, 48%);
+    --dark-gray-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --fw-500: 500;
+    --fw-700: 700;
+}
+*{
+    font-size: 14px;
+}
+
+body{
+    font-size: 14px;
+    background-color: var(--cream);
+    font-family: montserrat, sans-serif;
+}
+.image_mobile_shell{
+    width: 90%;
+    margin: 28% auto 0px auto;
+    box-sizing: border-box;
+    
+}
+.image_mobile{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+    top: 3px;
+}
+
+.shell_main{
+    border-radius: 0px 0px 10px 10px;
+    width: 90%;
+    margin: 0px auto 0px auto;
+    box-sizing: border-box;
+    background-color: var(--white);
+    padding: 1.8rem;
+}
+.category{
+    font-size: .5rem;
+    margin-top: 0px;
+    letter-spacing: 2.5px;
+    color: var(--dark-blue);
+}
+h1{
+    font-family: fraunces, serif;
+    font-weight: var(--fw-700);
+    font-size: 2.2rem;
+}
+.content{
+    line-height: 1.5rem;
+    color: var(--dark-gray-blue);
+}
+.shell_price{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price_sale{
+    font-size: 2rem;
+    font-family: fraunces, serif;
+    color: var(--cyan);
+    margin: .5rem;
+    margin-bottom: 1.3rem;
+    font-weight: var(--fw-700);
+}
+.price_original{
+    line-height: 1.8rem;
+    margin-left: 1.3rem;
+    font-size: .8rem;
+}
+s{
+    color: var(--dark-blue);
+}
+button{
+    width: 100%;
+    background-color: var(--cyan);
+    border-radius: 10px; 
+    border: none;
+    color: var(--white);
+    padding: 1rem;
+    font-weight: var(--fw-500);
+}
+.image_cart{
+    margin-right: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 35%, 24%);
+}
+
+@media screen and (min-width: 377px) {
+    .image_mobile_shell{
+        display: none;
+    }
+
+    .image_desktop{
+        display: block;
+        width: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .shell_desktop{ 
+        padding: 1.8rem;
+        border-radius: 10px;
+    }
+    .shell_main{
+        width: 600px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 125px auto 0px auto;
+        border-radius: 10px;
+
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .image_desktop{
+        display: none;
+    }
+    
+}
